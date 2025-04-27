@@ -403,17 +403,39 @@
   </div>
   
   <!-- Problem 17 -->
-  <div class="card">
+<div class="card">
     <div class="question" onclick="toggleAnswer('ans18')">
-      17. For \( f(x,y) = \frac{1}{\ln(4-x^2-y^2)} \) find domain and range
+      17. For the function \( f(x, y) = \frac{1}{\ln(4 - x^2 - y^2)} \), find and sketch the domain. Also, determine the range.
     </div>
     <div class="answer" id="ans18">
-      <p>Domain:</p>
-      <p>Need \( 4 - x^2 - y^2 > 0 \) and \( \ln(4-x^2-y^2) \neq 0 \).</p>
+      <p><b>Step 1:</b> Find where the function is defined.</p>
+      <ul>
+        <li>The argument of the logarithm must be positive: \( 4 - x^2 - y^2 > 0 \), which simplifies to \( x^2 + y^2 < 4 \).</li>
+        <li>The denominator must not be zero: \( \ln(4 - x^2 - y^2) \neq 0 \).</li>
+      </ul>
   
-      <p>That means inside a circle of radius 2, but not where \( 4-x^2-y^2 = 1 \).</p>
+      <p><b>Step 2:</b> Solve where \( \ln(4 - x^2 - y^2) = 0 \).</p>
+      <p>\[ \ln(4 - x^2 - y^2) = 0 \implies 4 - x^2 - y^2 = 1 \implies x^2 + y^2 = 3 \]</p>
   
-      <p>Range is all real numbers corresponding to \( f(x,y) \) values for those inputs.</p>
+      <p><b>Step 3:</b> Describe the domain.</p>
+      <ul>
+        <li>All points inside the circle \( x^2 + y^2 < 4 \).</li>
+        <li>Exclude the circle \( x^2 + y^2 = 3 \).</li>
+      </ul>
+      <p><b>Domain:</b> \( \{(x, y) \mid x^2 + y^2 < 4, \, x^2 + y^2 \neq 3\} \)</p>
+  
+      <p><b>Step 4:</b> Sketch:</p>
+      <ul>
+        <li>A large circle of radius 2 centered at the origin, with inside shaded.</li>
+        <li>Exclude the smaller circle of radius \( \sqrt{3} \) (about 1.732).</li>
+      </ul>
+  
+      <p><b>Step 5:</b> Find the range.</p>
+      <ul>
+        <li>As \( (x, y) \to 0 \), \( f(x, y) \to \frac{1}{\ln(4)} \approx 0.721 \).</li>
+        <li>As \( (x, y) \to x^2 + y^2 \to 3 \), \( f(x, y) \to +\infty \).</li>
+      </ul>
+      <p><b>Range:</b> \( (0.721, +\infty) \)</p>
     </div>
   </div>
       
