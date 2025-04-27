@@ -387,18 +387,42 @@
   </div>
   
   <!-- Problem 16 -->
-  <div class="card">
-    <div class="question" onclick="toggleAnswer('ans17')">
-      16. Rectangular poster optimization problem
+<div class="card">
+    <div class="question" onclick="toggleAnswer('ans19')">
+      16. A rectangular poster is being designed to have 50 square inches of print area. The poster has margins of 4 inches at the top and bottom and 2 inches on each side. Determine the overall dimensions of the poster that will minimize the total amount of paper used.
     </div>
-    <div class="answer" id="ans17">
-      <p>Area of print = 50:</p>
-      <p>\[ (x-4)(y-8) = 50 \]</p>
+    <div class="answer" id="ans19">
+      <p><b>Step 1:</b> Define variables:</p>
+      <ul>
+        <li>Let \( w \) = width of printed area, \( h \) = height of printed area.</li>
+        <li>Given: \( wh = 50 \).</li>
+        <li>Overall width = \( w + 4 \), Overall height = \( h + 8 \).</li>
+      </ul>
   
-      <p>Total area (including margins):</p>
-      <p>\[ A = xy \]</p>
+      <p><b>Step 2:</b> Express total area:</p>
+      <p>\[ A = (w + 4)(h + 8) \]</p>
   
-      <p>Use substitution from first equation into second, then minimize \( A \) using derivative.</p>
+      <p><b>Step 3:</b> Substitute \( h = \frac{50}{w} \):</p>
+      <p>\[ A(w) = (w + 4)\left(\frac{50}{w} + 8\right) \]</p>
+      <p>Expanding and simplifying:</p>
+      <p>\[ A(w) = 8w + \frac{200}{w} + 82 \]</p>
+  
+      <p><b>Step 4:</b> Minimize A(w):</p>
+      <p>Take derivative and set to 0:</p>
+      <p>\[ A'(w) = 8 - \frac{200}{w^2} \]</p>
+      <p>Solving:</p>
+      <p>\[ w^2 = 25 \quad \Rightarrow \quad w = 5 \]</p>
+  
+      <p>Find \( h \):</p>
+      <p>\[ h = \frac{50}{5} = 10 \]</p>
+  
+      <p><b>Step 5:</b> Find overall dimensions:</p>
+      <ul>
+        <li>Overall width = \( 5 + 4 = 9 \) inches</li>
+        <li>Overall height = \( 10 + 8 = 18 \) inches</li>
+      </ul>
+  
+      <p><b>Final Answer:</b> The overall dimensions are <b>9 inches wide and 18 inches tall</b>.</p>
     </div>
   </div>
   
