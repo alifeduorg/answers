@@ -355,20 +355,28 @@
   </div>
 <!-- Problem 15 -->
 <div class="card">
-    <div class="question" onclick="toggleAnswer('ans15')">
-      15(a). Find general expression for nth derivative of \( f(x) = \frac{1}{ax+b} \)
-    </div>
-    <div class="answer" id="ans15">
-      <p>First derivative:</p>
-      <p>\[ f'(x) = \frac{-a}{(ax+b)^2} \]</p>
-  
-      <p>Second derivative:</p>
-      <p>\[ f''(x) = \frac{2a^2}{(ax+b)^3} \]</p>
-  
-      <p>Pattern:</p>
-      <p>\[ f^{(n)}(x) = (-1)^n n! a^n (ax+b)^{-(n+1)} \]</p>
-    </div>
+  <div class="question" onclick="toggleAnswer('ans20')">
+    15. (a) Derive a general expression for the nth derivative of the function \( f(x) = \frac{1}{ax+b} \), where 'a' and 'b' are constants. (b) Apply this formula to find the nth derivative of the function \( f(x) = \frac{x+3}{(x-1)(x+2)} \).
   </div>
+  <div class="answer" id="ans20">
+    <p><b>(a) General Formula:</b></p>
+    <p>Starting with \( f(x) = (ax+b)^{-1} \), using the chain and power rule repeatedly:</p>
+    <p>The nth derivative is:</p>
+    <p><b>\[
+    f^{(n)}(x) = (-1)^n n! a^n (ax+b)^{-(n+1)}
+    \]</b></p>
+
+    <p><b>(b) Apply the formula:</b></p>
+    <p>First, express \( f(x) \) using partial fractions:</p>
+    <p>\[
+    \frac{x+3}{(x-1)(x+2)} = \frac{4}{3(x-1)} - \frac{1}{3(x+2)}
+    \]</p>
+    <p>Then, applying the general formula to each term:</p>
+    <p><b>\[
+    f^{(n)}(x) = (-1)^n n! \left( \frac{4}{3}(x-1)^{-(n+1)} - \frac{1}{3}(x+2)^{-(n+1)} \right)
+    \]</b></p>
+  </div>
+</div>
   
   <!-- Problem 15(b) -->
   <div class="card">
